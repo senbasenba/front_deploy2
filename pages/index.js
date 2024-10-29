@@ -1,17 +1,17 @@
 import { useState } from 'react';
-
 // 環境変数の URL を使用するための設定
-const flaskUrl = process.env.NEXT_PUBLIC_FLASK_API_URL;
+const flaskUrl = 'https://temp-step32-demo-azf2eebpfwcmc4de.eastus-01.azurewebsites.net';
 
 export default function Home() {
 
-  //GETリクエストを送信
+  // GETリクエストを送信
   const [getResponse, setGetResponse] = useState('');
 
   const handleGetRequest = async () => {
     const res = await fetch(`${flaskUrl}/api/hello`, {
       method: 'GET',
     });
+
     const data = await res.json();
 
     // GETリクエストの結果をコンソールに表示
