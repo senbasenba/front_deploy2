@@ -1,6 +1,7 @@
 import { useState } from 'react';
 // 環境変数の URL を使用するための設定
-const flaskUrl = 'https://temp-step32-demo-azf2eebpfwcmc4de.eastus-01.azurewebsites.net';
+const flaskUrl = 'https://temp-step32-demo-azf2eebpfwcmc4de.eastus-01.azurewebsites.net/';
+
 
 export default function Home() {
 
